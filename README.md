@@ -2,6 +2,6 @@
 
 ## Note to self: To-do list
  - [ ] make site responsive
- - [ ] use data from [JSON API](https://panjs.com/ywc.json)
+ - [x] use data from [JSON API](https://panjs.com/ywc.json)
  - [ ] add `og:*` tags
  - [ ] add favicon

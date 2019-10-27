@@ -29,6 +29,12 @@ nav {
 
 .nav-list-item > a {
   position: relative;
+  text-decoration: none;
+
+  &:visited {
+    color: unset;
+    text-decoration: none;
+  }
 
   &::after {
     box-sizing: border-box;
