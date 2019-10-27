@@ -15,6 +15,16 @@
       flex: 1;
       padding: 0px 15px;
       font-size: 14px;
+
+      a {
+        text-decoration: none;
+        color: $white;
+
+        &:visited {
+          text-decoration: none;
+          color: $white;
+        }
+      }
     }
   }
 }
