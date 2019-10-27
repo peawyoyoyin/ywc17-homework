@@ -1,0 +1,20 @@
+{
+  "name": "ywc17-homework",
+  "version": "1.0.0",
+  "description": "homework entry for YWC 17",
+  "main": "src/index.js",
+  "author": "peawyoyoyin",
+  "license": "MIT",
+  "scripts": {
+    "clean": "rm dist/bundle.js",
+    "start": "parcel src/index.html",
+    "build": "parcel build src/index.html"
+  },
+  "devDependencies": {
+    "parcel-bundler": "^1.12.4",
+    "sass": "^1.23.1"
+  },
+  "dependencies": {
+    "normalize.css": "^8.0.1"
+  }
+}

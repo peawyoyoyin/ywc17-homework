@@ -1,0 +1,27 @@
+#footer-contacts {
+  padding-left: 12%;
+  padding-right: 12%;
+
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
+
+  
+  display: flex;
+  justify-content: space-around;
+  background-color: $ui-footer-color;
+}
+
+#footer-brand {
+  flex: 1;
+  padding: 10px;
+}
+
+#footer-contacts-details {
+  flex: 3;
+  display: flex;
+}
+
+.footer-contacts-details-section {
+  padding: 15px;
+  flex: 1;
+}

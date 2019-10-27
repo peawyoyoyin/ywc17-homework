@@ -1,0 +1,18 @@
+@import 'colors';
+@import 'fonts';
+@import 'common';
+@import 'sections/nav';
+@import 'sections/banner';
+@import 'sections/register';
+@import 'sections/details';
+@import 'sections/links';
+@import 'sections/footer';
+
+main {
+  padding-top: 60px;
+}
+
+* {
+  font-family: $secondary-font;
+  line-height: 1.8;
+}

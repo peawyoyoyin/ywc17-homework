@@ -1,0 +1,47 @@
+section#links {
+  margin-left: 17%;
+  margin-right: 17%;
+  margin-bottom: 5em;
+}
+
+#big-links {
+  display: flex;
+  width: 100%;
+  margin: 5em 0;
+}
+
+%link-item {
+  flex: 1;
+  padding: 0px 15px;
+
+  img {
+    cursor: pointer;
+    width: 100%;
+  }
+
+}
+
+.big-link-item {
+  @extend %link-item;
+}
+
+#small-links {
+  display: flex;
+  padding: 0px 15px;
+  width: 100%;
+  justify-content: space-around;
+}
+
+.small-link-item {
+  @extend %link-item;
+
+  img {
+    width: 75%;
+    box-sizing: border-box;
+    transition: all 0.55s ease-in-out;
+    &:hover {
+      transform: scale(1.2);
+    }  
+  }
+
+}

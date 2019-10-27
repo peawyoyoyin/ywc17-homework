@@ -1,0 +1,22 @@
+@import url(../assets/fonts/TATSanaChon-Bold.woff2);
+@import url(../assets/fonts/TATSanaChon-Regular.woff2);
+@import url(../assets/fonts/TATSanaSuksa-Regular.woff2);
+
+@font-face {
+  font-family: 'TATSanaChon';
+  src: url(../assets/fonts/TATSanaChon-Regular.woff2) format('woff2');
+}
+
+@font-face {
+  font-family: 'TATSanaChon';
+  src: url(../assets/fonts/TATSanaChon-Bold.woff2) format('woff2');
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: 'TATSanaSuksa';
+  src: url(../assets/fonts/TATSanaSuksa-Regular.woff2) format('woff2');
+}
+
+$primary-font:    'TATSanaChon';
+$secondary-font:   'TATSanaSuksa';

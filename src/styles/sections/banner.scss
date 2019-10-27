@@ -1,0 +1,40 @@
+$banner-height: 350px;
+
+section#banner {
+  height: $banner-height;
+  display: flex;
+  align-items: stretch;
+}
+
+.banner-cover-item {
+  flex: 1;
+}
+
+%banner-cover-item-background-base {
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.banner-cover-item-1 {
+  @extend %banner-cover-item-background-base;
+  background-image: url(../assets/img/banner-cover-1.jpg);
+}
+
+.banner-cover-item-2 {
+  @extend %banner-cover-item-background-base;
+  background-image: url(../assets/img/banner-cover-2.jpg);
+}
+
+.banner-cover-item-3 {
+  @extend %banner-cover-item-background-base;
+  background-image: url(../assets/img/banner-cover-3.jpg);
+}
+
+#banner-brand {
+  position: absolute;
+  height: $banner-height;
+  left: 50%;
+  transform: translate(-50%);
+  display: flex;
+  align-items: center;
+}
