@@ -1,9 +1,14 @@
 $banner-height: 350px;
+$banner-height-small: 221px;
 
 section#banner {
   height: $banner-height;
   display: flex;
   align-items: stretch;
+
+  @include small-only {
+    height: $banner-height-small;
+  }
 }
 
 .banner-cover-item {
@@ -37,4 +42,13 @@ section#banner {
   transform: translate(-50%);
   display: flex;
   align-items: center;
+
+  @include small-only {
+    height: $banner-height-small;
+    width: 110px;
+  }
+
+  img {
+    width: 100%;
+  }
 }

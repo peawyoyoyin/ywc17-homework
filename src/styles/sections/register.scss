@@ -13,6 +13,10 @@ section#register {
 
 #duration {
   font-size: 3em;
+
+  @include small-only {
+    font-size: 2em;
+  }
 }
 
 #register-btn {
@@ -43,5 +47,6 @@ section#register {
   @include small-only {
     max-width: 100%;
     min-width: 0;
+    font-size: 1.2em;
   }
 }

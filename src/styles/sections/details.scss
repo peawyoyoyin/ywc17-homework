@@ -1,2 +1,10 @@
-section#details {
+#details-header {
+  @include small-only {
+    font-size: 1.5em;
+    line-height: 1.6;
+  }
+}
+
+#condition-header {
+  font-size: 1em;
 }
