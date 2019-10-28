@@ -7,7 +7,7 @@
   padding: 0px;
   background: #fff;
 
-  @media only screen and (max-width: 600px) {
+  @include small-only {
   }
 }
 
@@ -22,7 +22,7 @@
   justify-content: center;
   align-items: center;
 
-  @media only screen and (max-width: 600px) {
+  @include small-only {
     flex-wrap: wrap;
     display: none;
   }
@@ -40,7 +40,7 @@
 
   cursor: pointer;
 
-  @media only screen and (max-width: 600px) {
+  @include small-only {
     flex-basis: 100%;
     min-height: 2em;
     text-align: right;
@@ -68,7 +68,7 @@
     transform: scaleX(0);
     transition: all 0.3s ease-in-out;
 
-    @media only screen and (max-width: 600px) {
+    @include small-only {
       display: none;
     }
   }
@@ -91,7 +91,7 @@
 
   justify-content: space-between;
 
-  @media only screen and (max-width: 600px) {
+  @include small-only {
     display: flex;
     position: relative;
     max-height: 3em;
@@ -100,8 +100,4 @@
   img {
     max-height: 100%;
   }
-}
-
-#nav-mobile-brand {
-  flex: 1;
 }

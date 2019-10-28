@@ -40,7 +40,7 @@ section#register {
     background-color: #FBBC33;
   }
 
-  @media only screen and (max-width: 600px) {
+  @include small-only {
     max-width: 100%;
     min-width: 0;
   }

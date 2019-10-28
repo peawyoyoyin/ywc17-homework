@@ -5,7 +5,7 @@
   justify-content: space-around;
   background-color: $ui-footer-color;
 
-  @media only screen and (max-width: 600px) {
+  @include small-only {
     padding: 1.5em 15px;
     flex-wrap: wrap;
   }
