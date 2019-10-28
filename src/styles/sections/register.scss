@@ -39,4 +39,9 @@ section#register {
   &:hover {
     background-color: #FBBC33;
   }
+
+  @media only screen and (max-width: 600px) {
+    max-width: 100%;
+    min-width: 0;
+  }
 }

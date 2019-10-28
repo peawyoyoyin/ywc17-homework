@@ -6,22 +6,30 @@
   <meta property="og:type" content="website">
   <meta property="og:description" content="YWC 17th's homework entry by peawyoyoyin">
   <meta property="og:image" content="https://www.ชิมช้อปใช้.com/img/share/Share_Social.png">
-
+  
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:creator" content="@peawyoyoyin2">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
   <link rel="shortcut icon" href="assets/img/footer-brand.png">
   <link rel="stylesheet" href="../node_modules/normalize.css/normalize.css">
   <link rel="stylesheet" href="./styles/main.scss">
 </head>
 <body>
-  <nav>
+  <div id="nav">
+      <div id="nav-mobile">
+          <div id="nav-mobile-brand">
+            <img src="assets/img/footer-brand.png">
+          </div>
+          <div id="nav-mobile-hamburger"> = </div>
+      </div>
     <ul id="nav-list" class="nav-list">
       <li id="nav-list-item-proto" class="nav-list-item">
         <a class="text-primary text-bold"></a> 
       </li>
     </ul>
-  </nav>
+  </div>
   <main>
     <section id="banner">
       <div class="banner-cover-item banner-cover-item-1"></div>
@@ -43,7 +51,7 @@
         </button>
       </a>
     </section>
-    <section id="details">
+    <section id="details" class="container">
       <h1 id="details-header" class="text-primary text-color-primary text-bold">
         มาตรการส่งเสริมผู้บริโภค <br>
         ในประเทศ "ชิมช้อปใช้"
@@ -54,7 +62,7 @@
           <p id="details-condition"></p>
       </div>
     </section>
-    <section id="links">
+    <section id="links" class="container">
       <div id="big-links">
         <div class="big-link-item">
           <a href="tel:021111144">
@@ -110,25 +118,23 @@
         <div id="footer-brand">
           <img src="assets/img/footer-brand.png">
         </div>
-        <div id="footer-contacts-details">
-          <div class="footer-contacts-details-section">
-            <p class="footer-contact-details-section-header text-color-primary text-bold reset-margin">ข้อมูลลงทะเบียนประชาชน</p>
-            การรับสิทธิ การใช้งานแอปพลิเคชั่น “เป๋าตัง” และ “ถุงเงิน” <br>
-            ติดต่อ ชิมช้อปใช้ Call Center by Krungthai โทร. <a href="tel:021111144">0 2111 1144</a>
-          </div>
-          <div class="footer-contacts-details-section">
-            <p class="footer-contact-details-section-header text-color-primary text-bold reset-margin">ข้อมูลลงทะเบียนผู้ประกอบการ</p>
-            เงื่อนไขและวิธีการเข้าร่วมมาตรการฯ <br>
-            ติดต่อ โทร. <a href="tel:022706400">0 2270 6400 กด 7</a>
-          </div>
-          <div class="footer-contacts-details-section">
-            <p class="footer-contact-details-section-header text-color-primary text-bold reset-margin">ข้อมูลเที่ยวชิมช้อปใช้</p>
-            ติดต่อ ททท. <br>
-            โทร <a href="tel:1672">1672</a>
-          </div>
+        <div class="footer-contacts-details-section">
+          <p class="footer-contact-details-section-header text-color-primary text-bold reset-margin">ข้อมูลลงทะเบียนประชาชน</p>
+          การรับสิทธิ การใช้งานแอปพลิเคชั่น “เป๋าตัง” และ “ถุงเงิน” <br>
+          ติดต่อ ชิมช้อปใช้ Call Center by Krungthai โทร. <a href="tel:021111144">0 2111 1144</a>
+        </div>
+        <div class="footer-contacts-details-section">
+          <p class="footer-contact-details-section-header text-color-primary text-bold reset-margin">ข้อมูลลงทะเบียนผู้ประกอบการ</p>
+          เงื่อนไขและวิธีการเข้าร่วมมาตรการฯ <br>
+          ติดต่อ โทร. <a href="tel:022706400">0 2270 6400 กด 7</a>
+        </div>
+        <div class="footer-contacts-details-section">
+          <p class="footer-contact-details-section-header text-color-primary text-bold reset-margin">ข้อมูลเที่ยวชิมช้อปใช้</p>
+          ติดต่อ ททท. <br>
+          โทร <a href="tel:1672">1672</a>
         </div>
       </div>
-      <div id="footer-nav">
+      <div id="footer-nav" class="container">
         <ul id="footer-nav-list">
           <li class="footer-nav-list-item text-bold text-primary">Copyright © 2003-2019</li>
           <li class="footer-nav-list-item">

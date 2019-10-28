@@ -7,7 +7,9 @@
 function createNavbarItem(label, href) {
   const navbarElement = document.getElementById("nav-list-item-proto").cloneNode(true);
   const linkElement = navbarElement.querySelector("a");
-  
+
+  // remove the "nav-list-item-proto" id attribute
+  navbarElement.id = "";
   linkElement.innerText = label;
   linkElement.href = href;
 
@@ -29,4 +31,6 @@ export function setNavbarItems(navbarItems) {
     .forEach(navbarItemElement => {
       navbarList.appendChild(navbarItemElement);
     })
+  // remove the "nav-list-item-proto" prototype element
+  document.getElementById("nav-list-item-proto").remove();
 }
