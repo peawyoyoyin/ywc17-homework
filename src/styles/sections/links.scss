@@ -6,40 +6,62 @@ section#links {
   display: flex;
   width: 100%;
   margin: 5em 0;
+
+  @include small-only {
+    flex-wrap: wrap;
+  }
 }
 
 %link-item {
-  flex: 1;
+  flex: 1 600px;
   padding: 0px 15px;
 
   img {
     cursor: pointer;
     width: 100%;
+
+    @include small-only {
+      width: 80%;
+    }
   }
 
 }
 
 .big-link-item {
+  display: flex;
+  text-align: center;
   @extend %link-item;
 }
 
 #small-links {
   display: flex;
+  margin: -15px; 
   padding: 0px 15px;
+  max-width: 100%;
   width: 100%;
-  justify-content: space-around;
+
+  align-content: flex-start;
+  align-items: flex-start;  
+
+  @include small-only {
+    flex-wrap: wrap;
+    padding: 0px;
+  }
 }
 
 .small-link-item {
   @extend %link-item;
+  flex: 0 0;
+  max-width: 33%;
+  flex-basis: 33%;
 
   img {
-    width: 75%;
+    width: 45%;
     box-sizing: border-box;
     transition: all 0.55s ease-in-out;
     &:hover {
       transform: scale(1.2);
-    }  
+    }
   }
 
 }
