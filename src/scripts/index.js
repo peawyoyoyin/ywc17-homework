@@ -1,5 +1,6 @@
 import { setNavbarItems } from './navbar';
 import { setDurationText, setDetailText, setConditionText } from './details';
+import { setupHamburgerMenu } from './hamburger';
 
 const apiUrl = 'https://panjs.com/ywc.json';
 
@@ -11,3 +12,4 @@ fetch(apiUrl)
     setDetailText(apiData.detail);
     setConditionText(apiData.condition);
   })
+setupHamburgerMenu();

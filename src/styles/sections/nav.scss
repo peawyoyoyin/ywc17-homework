@@ -6,9 +6,6 @@
   min-height: 60px;
   padding: 0px;
   background: #fff;
-
-  @include small-only {
-  }
 }
 
 .nav-list {
@@ -24,7 +21,22 @@
 
   @include small-only {
     flex-wrap: wrap;
-    display: none;
+    visibility: hidden;
+    min-height: 0px;
+    max-height: 0px;
+    z-index: 2;
+
+    opacity: 0;
+    
+
+    transition: max-height 0.4s ease-in-out, opacity 0.8s;
+
+    &.expanded {
+      visibility: visible;
+      display: block;
+      max-height: 8em;
+      opacity: 1;
+    }
   }
 
   li {
