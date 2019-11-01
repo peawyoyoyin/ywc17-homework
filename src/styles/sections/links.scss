@@ -46,14 +46,21 @@ section#links {
   @include small-only {
     flex-wrap: wrap;
     padding: 0px;
+
+    margin: 0;
   }
 }
 
 .small-link-item {
   @extend %link-item;
-  flex: 0 0;
-  max-width: 33%;
-  flex-basis: 33%;
+  
+  @include small-only {
+    flex: unset;
+    text-align: center;
+    flex-grow: 1;
+    width: 33%;
+    padding: 0;
+  }
 
   img {
     width: 45%;
